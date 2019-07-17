@@ -1,0 +1,137 @@
+<section class="capsule">
+
+    <h1>Caloric Calculator</h1>
+
+  <form  id = "cal">
+
+    <!--gender-->
+    <div class="input-group mb-4">
+      <div class="input-group-prepend">
+        <label for="" class="input-group-text">gender</label>
+      </div>
+      <select class = "custom-select" id="gender">
+        <option value="male">male</option>
+        <option value="female">female</option>
+      </select>
+    </div>
+    <!--weight-->
+    <div class="input-group mb-4">
+      <div class="input-group-prepend">
+        <label for="" class="input-group-text">weight</label>
+      </div>
+      <input type="number" placeholder="weight" name = "weight" required>
+      <select class = "custom-select" name="" id="weight">
+        <option value="kg">kg</option>
+        <option value="lbs">lbs</option>
+      </select>
+    </div>
+
+    <!--height and age-->
+
+    <div class="input-group mb-4">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Height and age</span>
+      </div>
+      <input type="number" placeholder="height in inches" name = "height" required>
+      <input type="number" placeholder="age" name = "age" required>
+    </div>
+
+    <!--activity level-->
+    <div class="input-group mb-4">
+      <div class="input-group-prepend">
+        <label for="" class="input-group-text">activity</label>
+      </div>
+      <select class = "custom-select" id = "drop">
+        <option value="sedetary">sedetary individual</option>
+        <option value="physically">physically active</option>
+        <option value="moderate">moderate exercise</option>
+        <option value="active">active</option>
+        <option value="vigorous">vigorous exercise</option>
+      </select>
+    </div>
+
+
+    <!--different input values-->
+    <!-- <p>Preferred macro percentages <span id = "optional">optional<sup>*</sup></span></p>-->
+    <div id="macros">
+      <div class="input-group input-group-sm mb-3 adjust">
+        <div class="input-group-prepend">
+          <span class="input-group-text">carbohydrates</span>
+        </div>
+        <input type= "number" class="form-control" name = "carbs" min="0" max="100">
+        <div class="input-group-append">
+          <span class="input-group-text">%</span>
+        </div>
+
+        <div class="input-group-prepend">
+          <span class="input-group-text">proteins</span>
+        </div>
+        <input type= "number" class="form-control" name = "protein" min="0" max="100">
+        <div class="input-group-append">
+          <span class="input-group-text">%</span>
+        </div>
+
+        <div class="input-group-prepend">
+          <span class="input-group-text">fats</span>
+        </div>
+        <input type= "number" class="form-control" name = "fats" min="0" max="100">
+        <div class="input-group-append">
+          <span class="input-group-text">%</span>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="display"></div>
+    <!--range-->
+
+    <!--
+    <p>adjust slider to desire weight goal <span class = "plus">+</span><span class = "output"></span> <span class = "unit">lbs</span> a week</p>
+    <p class ="label"><span id = "left">deficit</span><span id = "center">equilibrium</span><span id = "right">surplus</span></p>
+    <input class = "slider" type = "range" min = "-2" max = "2" step = "0.5">
+    -->
+    <br/>
+
+    <input class = "btn btn-outline-success" id = "submit"  type="submit" value = "submit">
+
+    <!--dropdowns-->
+    <div class="drops">
+      <!--deficit-->
+      <div class="btn-group">
+        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          deficit
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item lbs1">-1</a>
+          <a class="dropdown-item lbs2">-2</a>
+        </div>
+      </div>
+
+      <!--equilibrium-->
+      <div class="btn-group">
+        <button class="btn btn-secondary btn-sm lbs3" type="button" aria-haspopup="true" aria-expanded="false">
+          equilibrium
+        </button>
+
+      </div>
+
+      <!--surplus-->
+      <div class="btn-group">
+        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          surplus
+        </button>
+        <div class="dropdown-menu">
+
+          <a class="dropdown-item lbs4" >+1</a>
+          <a class="dropdown-item lbs5" >+2</a>
+
+        </div>
+      </div>
+    </div>
+    <button type = "button" class = "btn btn-outline-info btn-sm edit" >Custom Macros</button>
+    <button type="button" class="btn btn-outline-danger btn-sm cancel">Cancel</button>
+    <div class="chart"><canvas id = "pie" ></canvas></div>
+
+  </form>
+
+</section>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>contact</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="scss/pt.css">
+</head>
+<body>
+
+  <header>
+
+    <div class="title">
+        <h1>NeoxAthletics </h1>
+        <span class = "sub">Fitness Redefine</span>
+      </div>
+    
+      <nav class = "top-nav">
+     
+          <ul id = "mainMenu">
+              <li><a class="line" href= "index.html">Home</a></li>
+              <li><a class="line" href="StrengthandConditioning.html">Strength</a></li>
+              <li><a class="line" href="SportNutrition.html">Sport Nutrition</a></li>
+              <li><a class = "active"  href="contact.html">contact</a></li>
+              
+              
+            </ul>
+
+            <div class="wrapperNav">
+              <div id = "hamburger">
+                <div class = "hamline"></div>
+                <div class = "hamline"></div>
+                <div class = "hamline"></div>
+              </div>
+  
+              <div id = "list">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="StrengthandConditioning.html">Strength</a></li>
+                  <li><a href="SportNutrition.html">Sport Nutrition</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+        </div>
+            
+      
+      </nav>
+
+</header>
+
+<main>
+
+<section id = "bio">
+  <div class="leftContent">
+      <h2>About</h2>
+  </div>
+  
+  <p>My name is Juan Mario Rodriguez, I am here to help you reach your fitness goals at best of my ability and knowledge.
+    I have worked in the fitness industry for about 3 years now. Started as a personal trainer at YMCA.
+    From there I transition to EBC and started as a floor trainer. I been a part of the fitness community since I was 18 years old.
+    Even after many years in the fitness industry, I still strive in my endeavor of new and challenging fitness goals. 
+    In my journey I have helped friends and family reach their goals.
+    I am here today to present to you neoxathletics.
+    I have created this website with content to help those who are new into the fitness community or just trying to get a refresh on some fitness tips.
+    Hope this helps you guys in some way.</p>
+    <!--img src="juan.jpg" alt=""-->
+</section>
+
+<section id = "contact">
+
+<div class="leftContent">
+  <h2>Contact</h2>
+  <p> Feel free to contact me </p>
+
+
+    
+  <div id = "hover">
+    <span id = "emailAddr">Neo&#45;athletics@hotmail.com</span>
+    <span id = "emailLabel">Email</span>
+  </div>
+
+  <p id = "emailMe">Neo&#45;athletics@hotmail.com</p>
+
+</div>
+  
+
+  <!--div id="form-messages" class = 'success error'></div-->
+  <div id = "formContainer">
+    <form class="contact" name = "contact" method = "POST" netlify>
+      <h3>Info</h3>
+
+      <div>
+        <input id = "firstName" type="text" placeholder=" " name = "firstName" pattern = [A-Za-z]+ required> <br>
+        <label for="firstName">First name</label>
+      </div>
+
+    <div>
+      <input id = "lastName" type="text" placeholder=" " name="lastName" pattern = [A-Za-z]+ required><br>
+      <label for="lastName">Last name</label>
+     </div>
+
+     <div>
+       <input id = "email" type="email" placeholder=" " name="email" required><br>
+       <label for="email">Email</label>
+     </div>
+
+      <h3>Fitness</h3>
+      <label>Fitness Goal</label> <br>
+      <div id="select">
+        <select id = "goal" name="goal">
+          <option value="">Don't have one</option>
+          <option value="weight loss">weight loss</option>
+          <option value="tone">tone</option>
+          <option value="muscle">muscle</option>
+          <option value="strength">strength</option>
+          <option value="other">other</option>
+        </select>
+      </div>
+ 
+   
+      <input id = "other" type="text" placeholder="and that is?" pattern = [A-Za-z]+ > 
+
+<div id="days">
+  <label>how many days a week do you workout?</label> <br>
+  <input id = "workoutDays" type="number"  placeholder="#"  min="1"  name="workoutDays">
+</div>
+
+      <h3>Message</h3>
+      <div id = "text"><textarea name="message" id="message" cols="30" rows="10" placeholder = "comments or questions you may have" maxlength = "300" wrap = "hard" required></textarea></div>
+      <input id = "submit" type="submit" value="Send">
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="modal">
+    <span>&times;</span>
+    
+    <i class="fas fa-angle-left"></i>
+      <img src="SNS.JPEG" alt="">
+      <img src="CSC.JPEG" alt="">
+      <img src="CPT.JPEG" alt="">
+    <i class="fas fa-angle-right"></i>
+  
+      <div class="square" id="square0"></div>
+      <div class="square" id ="square1"></div>
+      <div class="square" id="square2"></div>
+  </div>
+  
+  <div id="left">
+    <p>&copy; NeoxAthletics 2019</p>
+    <div id="links">
+      <a href="SportNutrition.html#calorieForm">Calculate Calories</a>
+      <a href="StrengthandConditioning.html#formContainer">Find Out your 1RM</a>
+    </div>
+  </div>
+  
+  <div id="right">
+    <p>It's not just a goal, its a journey</p>
+    <a id = "portfolio-link" href="https://www.neoxorigins.com/" title="Portfolio of Juan Rodriguez">Dev Portfolio</a>
+  </div>
+  
+  <div id="center">
+    <p>Credentials:
+      <abbr id="SNS" title="Sport Nutrition Specialist">SNS</abbr>
+      <abbr id="CSC" title="Ceritfied Strength Coach">CSC</abbr>
+      <abbr id="CPT" title="Certified Personal Trainer">CPT</abbr>
+    </p>
+    
+    <div id="container"><img src="" alt=""></div>
+  </div>
+  
+  
+  </footer>
+  
+<script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="form.js"></script>
+</body>
+</html>
